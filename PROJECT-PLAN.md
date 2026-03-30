@@ -6,7 +6,8 @@
 |---|---|---|
 | Akash | (your GitHub username) | Repo Owner & Task Estimation Lead |
 | Mark | MarkHughes18 | README & Code Reviews Lead |
-| Dean | Dean-c19 | Bug Tracking & Diagrams Lead |
+| Dean | Dean-c19 | Bug Tracking Lead |
+| Graham | (Graham's GitHub username) | Integration, Visuals & Final QA Lead |
 
 ---
 
