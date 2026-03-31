@@ -39,3 +39,13 @@ We are following **Trunk-Based Development**:
 | Research 5 sources — Bug Tracking | Dean | `feature/bug-tracking-research` | Akash | Mon 30 Mar |
 
 ---
+### Phase 2 — Writing
+**Deadline: Wednesday 1 April 2026 11:59 PM **
+
+| Task | Owner | Branch | Reviewer | Deadline |
+|---|---|---|---|---|
+| Write Task Estimation section | Akash | `feature/task-estimation-writeup` | Mark | Wed 1 Apr |
+| Write Code Reviews section | Mark | `feature/code-reviews-writeup` | Akash | Wed 1 Apr |
+| Write Bug Tracking section (intro + good/bad practices) | Dean | `feature/bug-tracking-writeup` | Akash | Wed 1 Apr |
+
+---
