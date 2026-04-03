@@ -79,6 +79,10 @@ To ensure the quality of this handbook:
 
 /images/
 
+/research/
+
+/sections/
+
 ----- 
 
 ## Team Contributions
