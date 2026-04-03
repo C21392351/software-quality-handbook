@@ -4,10 +4,9 @@
 
 | Name | GitHub Username | Role |
 |---|---|---|
-| Akash | (your GitHub username) | Repo Owner & Task Estimation Lead |
+| Akash | C21392351 | Repo Owner & Task Estimation Lead |
 | Mark | MarkHughes18 | README & Code Reviews Lead |
-| Dean | Dean-c19 | Bug Tracking Lead |
-| Graham | (Graham's GitHub username) | Integration, Visuals & Final QA Lead |
+| Dean | Dean-c19 | Bug Tracking & Diagrams Lead |
 
 ---
 
@@ -40,14 +39,32 @@ We are following **Trunk-Based Development**:
 | Research 5 sources — Bug Tracking | Dean | `feature/bug-tracking-research` | Akash | Mon 30 Mar |
 
 ---
+
 ### Phase 2 — Writing
-**Deadline: Wednesday 2nd April 2026**
+**Deadline: Wednesday 1 April 2026 11:59 PM**
 
 | Task | Owner | Branch | Reviewer | Deadline |
 |---|---|---|---|---|
-| Write Task Estimation section | Akash | `feature/task-estimation-writeup` | Graham | Wed 1 Apr |
-| Write Code Reviews section | Mark | `feature/code-reviews-writeup` | Dean | Wed 1 Apr |
-| Write Bug Tracking section | Dean | `feature/bug-tracking-writeup` | Akash | Wed 1 Apr |
-| Integrate all three sections into one consistent handbook structure and add visuals | Graham | `feature/handbook-integration` | Mark, Akash, Dean | Wed 2nd Apr |
+| Write Task Estimation section | Akash | `feature/task-estimation-writeup` | Mark | Wed 1 Apr |
+| Write Code Reviews section | Mark | `feature/code-reviews-writeup` | Akash | Wed 1 Apr |
+| Write Bug Tracking section (intro + good/bad practices) | Dean | `feature/bug-tracking-writeup` | Akash | Wed 1 Apr |
+
+---
+
+### Phase 3 — Review, Integration & Submission
+**Deadline: Sunday 5 April 2026, 10:00 PM**
+
+| Task | Owner | Branch | Reviewer | Deadline |
+|---|---|---|---|---|
+| Merge all completed sections into the final handbook structure | Mark | `feature/final-handbook-assembly` | Akash | Thu 2 Apr |
+| Add diagrams/images and improve formatting for skim readability | Dean | `feature/diagrams-formatting` | Mark | Fri 3 Apr |
+| Review Task Estimation section and add second contributor updates | Mark | `feature/task-estimation-peer-review` | Dean | Fri 3 Apr |
+| Review Code Reviews section and add second contributor updates | Akash | `feature/code-reviews-peer-review` | Mark | Fri 3 Apr |
+| Review Bug Tracking section and add second contributor updates | Akash | `feature/bug-tracking-peer-review` | Dean | Fri 3 Apr |
+| Create team contribution table for the handbook | Akash | `feature/contribution-table` | Mark | Sat 4 Apr |
+| Write retrospective and add it below the project plan | Dean | `feature/retrospective` | Akash | Sat 4 Apr |
+| Final proofreading: headings, bullets, links, grammar, and consistency | Akash | `feature/final-proofread` | Dean | Sat 4 Apr |
+| Final pull request review and merge check | Mark | `feature/final-pr-check` | Team | Sun 5 Apr |
+| Submit public GitHub repository link on Brightspace | Akash | `main` | Team | Sun 5 Apr, 10:00 PM |
 
 ---
