@@ -1,118 +1,145 @@
-# Task Estimation in Scrum — Research Notes
+# Task Estimation in Scrum
 
-This file contains research sources gathered to inform the Task Estimation section of the handbook.
+## Purpose
 
----
+Task estimation helps the team make realistic sprint commitments by discussing effort, complexity, and uncertainty before work begins. In Scrum, estimation is not about predicting the future with perfect accuracy. It is about building a shared understanding of the work so that the team can plan sensibly, identify risks early, and avoid overcommitting.
 
-## Source 1 — How I Estimate Work as a Staff Software Engineer
-
-**URL:** https://www.seangoedecke.com/how-i-estimate-work/
-**Published:** January 2026
-**Author:** Sean Goedecke (Staff Software Engineer)
-
-**Key points from reading:**
-- A staff engineer's honest personal account of how estimation really works in large codebases
-- Unknown work always dominates software projects, you cannot estimate what you don't know yet
-- Skilled engineers estimate around uncertainty, not around certainty
-- The job is not to produce a precise duration but to map risks and return options with tradeoffs
-- Estimates are often used more as planning and negotiation tools for management than as engineering truths
-- Spending more time worrying about unknowns than knowns leads to better estimates
-
-**Why this is relevant to our team:**
-We often underestimate tasks because we only think about the code we know we need
-to write, not the unknown problems we will hit along the way. This article puts a
-name to that problem and gives a practical mindset shift for how we should approach
-estimation as a team.
+For a fast-moving startup, weak estimation causes predictable problems: overloaded sprints, unfinished work, rushed testing, missed deadlines, and defects reaching production. Good estimation reduces these risks by forcing the team to talk about assumptions before implementation starts.
 
 ---
 
-## Source 2 — We Engineers Suck at Task Estimation
+## What Task Estimation Means in Our Team
 
-**URL:** https://www.linkedin.com/pulse/we-engineers-suck-task-estimation-arpit-bhayani-cq7gc
-**Published:** May 2025
-**Author:** Arpit Bhayani (Software Engineer)
+At this company, estimation is a planning tool, not a performance target. Estimates help us decide what is realistic for a sprint and where the biggest risks are. The most useful part of estimation is often the conversation itself, because it reveals hidden work, unclear requirements, risky dependencies, and different assumptions between engineers.
 
-**Key points from reading:**
-- Engineer shares a personal story: estimated 1 week for a task, it took 4 weeks
-- We consistently forget to include testing, deployment, code reviews, meetings, sick days, and dependency delays
-- Engineers overestimate their own speed and underestimate complexity every time
-- Unknown unknowns, especially with new technologies, destroy estimates completely
-- The comments section confirms this is a universal experience across the entire industry
-
-**Why this is relevant to our team:**
-This is exactly what is happening on our team right now. Tasks take longer than
-expected because we only estimate the coding part and forget everything that
-surrounds it. Testing, review cycles, and integration issues are never included
-in our initial estimates.
-
----
-## Source 3 — Rules of Thumb for Software Development Estimations
-
-**URL:** https://vadimkravcenko.com/shorts/project-estimates/  
-**Published:** July 2023  
-**Author:** Vadim Kravcenko (CTO)
-
-**Key points from reading:**
-- The article is written from the perspective of a CTO with hands-on experience managing software teams
-- Initial estimates are usually optimistic and should be treated with caution
-- It is more realistic to give estimate ranges, such as best-case and worst-case outcomes, rather than a single fixed number
-- Communication overhead and coordination delays can be just as disruptive as technical challenges
-- Estimation improves when teams account for both delivery work and the time needed to align with others
-
-**Why this is relevant to our team:**
-This source gives practical advice from someone who has managed real software teams.
-The point about using ranges instead of fixed numbers is especially useful for us,
-because our current estimates often sound too certain even when there is obvious
-uncertainty in the work.
+We use **relative sizing** such as story points to compare tasks against one another. We do **not** treat story points as direct hour conversions. A 5-point story is simply understood to be larger, riskier, or more complex than a 2-point story.
 
 ---
 
-## Source 4 — Story Point Estimation Doesn't Work. Here's Why.
+## Team Standard for Estimation
 
-**URL:** https://uplevelteam.com/blog/story-point-estimation  
-**Published:** August 2024  
+Our team will follow these rules:
 
-**Key points from reading:**
-- Story points can become inconsistent because different teams interpret them in different ways
-- New team members often need time to learn how a specific team applies its estimation scale
-- Personal bias can heavily influence estimates, especially when developers feel familiar with the type of work
-- Velocity can be misleading if teams focus on appearing productive rather than measuring meaningful delivery
-- Story point systems are only useful when the team has a shared understanding of what each size represents
-
-**Why this is relevant to our team:**
-We are still a new team and have not fully developed a shared understanding of story
-points yet. This helps explain why our estimates sometimes feel inconsistent or
-random, and why newer team members may not interpret sizing in the same way.
+- Estimate backlog items collaboratively during refinement or sprint planning
+- Use story points for relative sizing rather than converting points directly into hours
+- Break large or unclear items into smaller tasks before committing them to a sprint
+- Include testing, code review, integration, deployment, and coordination effort in every estimate
+- Highlight assumptions, blockers, and dependencies before agreeing on an estimate
+- Revisit estimates when requirements or scope change
+- Review estimate accuracy in retrospectives so the team improves over time
 
 ---
 
-## Source 5 — Story Point Disaster (Reddit — Real Team Experience)
+## Estimation Flow
 
-**URL:** https://www.reddit.com/r/agile/comments/1gz46f7/story_point_disaster_agile_newbies_at_work_again/  
-**Published:** November 2024  
-
-**Key points from reading:**
-- The discussion captures real engineers describing problems their teams faced when first using story points
-- Some team members tried to convert hours directly into story points, which defeats the purpose of relative estimation
-- Relative sizing only becomes effective once a team has a shared reference point for comparison
-- Estimation usually takes a few sprints to stabilise, especially for newer teams
-- Early confusion with story points is common and does not necessarily mean the method has failed
-
-**Why this is relevant to our team:**
-This is highly relatable to our current situation. We are still learning how to use
-story points consistently, and this source shows that early confusion is normal.
-It also gives reassurance that teams usually improve after a few sprints once they
-build a shared reference for sizing work.
+```mermaid
+flowchart LR
+A[Backlog item] --> B[Break into smaller tasks]
+B --> C[Discuss risks and dependencies]
+C --> D[Estimate as a team]
+D --> E[Include testing review deployment]
+E --> F[Commit to sprint]
+F --> G[Compare estimate vs actual in retrospective]
+```
 
 ---
 
-## Common Themes Across All 5 Sources
+## Best Practices for Task Estimation
+
+- Break work down into the smallest meaningful unit that can be discussed clearly
+- Estimate as a team so different perspectives expose hidden complexity
+- Use relative sizing to compare effort instead of pretending every task can be timed exactly
+- Include the full delivery cycle: coding, testing, bug fixing, code review, deployment, and documentation
+- Use Planning Poker or a similar approach so people think independently before discussion
+- Record assumptions and risks alongside the estimate
+- Use ranges or flag uncertainty when the work is exploratory
+- Compare with similar completed work from previous sprints
+- Treat estimates as forecasts that may change when new information appears
+- Review past estimates against actual outcomes to improve future sprint planning
+
+---
+
+## Bad Practices to Avoid
+
+- Letting one senior engineer estimate everything alone
+- Estimating only implementation time and ignoring testing, review, and release work
+- Turning story points into hidden hour estimates
+- Treating an estimate as a promise rather than a best current forecast
+- Estimating large, vague stories without first breaking them down
+- Rushing estimation discussions just to get planning finished
+- Ignoring dependencies on other teams, services, tools, or approvals
+- Assuming familiar work is automatically low-risk
+- Never checking whether previous estimates were accurate
+- Using estimation to judge individual developer productivity
+
+---
+
+## Estimation Checklist
+
+Before agreeing an estimate, ask:
+
+- Is the work small enough to estimate confidently?
+- Does everyone understand the goal and acceptance criteria?
+- Have testing, code review, deployment, and integration been included?
+- Are there any unknowns, risks, or dependencies?
+- Has each team member had a chance to estimate independently?
+- Are we using previous similar tasks as a reference point?
+- Are we clear that this estimate may change if the scope changes?
+- Would this item be safer to split into smaller pieces?
+
+---
+
+## Why Task Estimation Matters for Our Startup
+
+In a team of 20 engineers, poor estimation does more than affect one task. It creates a ripple effect across the sprint. Underestimated work leads to unfinished stories, rushed testing, delayed reviews, and pressure to cut corners near the end of the sprint. Over time, this reduces trust in sprint planning and makes delivery feel unpredictable.
+
+Good estimation improves software quality because it creates space for the work that often gets forgotten: testing, debugging, review cycles, integration issues, and deployment effort. It also improves communication between engineers and stakeholders by making trade-offs visible early. When the team openly discusses uncertainty, it becomes easier to adjust scope before the sprint is overloaded.
+
+Estimation should therefore be seen as a quality practice, not just a planning ritual. Better estimates lead to more realistic sprint goals, less last-minute pressure, and fewer defects caused by rushed or incomplete work.
+
+---
+
+## Good vs Bad Estimation
+
+| Good estimation | Bad estimation |
+|---|---|
+| Team discussion before assigning a size | One person guesses the number alone |
+| Small, clearly defined work items | Large, vague stories with unclear scope |
+| Includes testing, review, and deployment | Only counts coding time |
+| Risks and dependencies are discussed | Hidden blockers are ignored |
+| Relative sizing based on comparison | Story points secretly converted into hours |
+| Estimate reviewed when scope changes | Original estimate treated as fixed forever |
+
+---
+
+## Common Themes from the Research
+
+Across the sources, the most consistent message is that estimation is less about predicting exact duration and more about exposing uncertainty, assumptions, and hidden work.
 
 | Theme | What it means for us |
 |---|---|
-| Engineers often underestimate work | Add buffer and avoid treating first estimates as final |
-| Unknowns dominate software work | Break tasks down until risks and uncertainties are more visible |
-| Non-coding work is often forgotten | Include testing, review, deployment, and communication time in every estimate |
-| Story points are relative, not absolute | Make sure the team shares the same understanding of the sizing scale |
-| Estimates are not commitments | Treat estimates as forecasts that can change when scope or context changes |
-| Discussion matters more than the number | The Planning Poker conversation is often more valuable than the final score itself |
+| Engineers usually underestimate work | Treat first estimates cautiously and avoid overcommitting |
+| Unknowns dominate software tasks | Break work down until risks become visible |
+| Non-coding effort is often forgotten | Always include testing, review, deployment, and coordination |
+| Story points only work when shared consistently | Agree as a team what different sizes roughly mean |
+| Estimates are forecasts, not promises | Update estimates when scope or knowledge changes |
+| Discussion matters more than the number | Use estimation to surface assumptions early |
+
+---
+
+## Further Reading
+
+1. **Sean Goedecke – How I Estimate Work as a Staff Software Engineer**  
+   https://www.seangoedecke.com/how-i-estimate-work/
+
+2. **Arpit Bhayani – We Engineers Suck at Task Estimation**  
+   https://arpitbhayani.me/blogs/we-engineers-suck-at-task-estimation/
+
+3. **Vadim Kravcenko – Rules of Thumb for Software Development Estimations**  
+   https://vadimkravcenko.com/shorts/project-estimates/
+
+4. **Uplevel – Story Point Estimation Doesn't Work. Here's Why.**  
+   https://uplevelteam.com/blog/story-point-estimation
+
+5. **Mountain Goat Software – Why Do We Estimate With Story Points Instead of Hours?**  
+   https://www.mountaingoatsoftware.com/blog/why-do-we-estimate-with-story-points-instead-of-hours
