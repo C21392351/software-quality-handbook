@@ -87,4 +87,38 @@ To ensure the quality of this handbook:
 
 ## Team Contributions
 
-A full breakdown of individual contributions can be found in the **Team Contributions** section of this repository.
+
+This project was developed collaboratively by three team members using feature branches and pull requests. Contributions below are based on commit history, merged pull requests, and file ownership.
+
+---
+
+**C21392351 – Project Lead / Task Estimation**
+
+- Created the initial `PROJECT-PLAN.md` with full project details, roles, phases, and deadlines
+- Wrote and refined the task estimation research and write-up (`01-task-estimation.md`)
+- Refactored the task estimation document for clarity and added sources and insights
+- Merged the majority of pull requests into `main` (PRs #2, #3, #4, #9, #10, #12, #13)
+- Led final handbook assembly and integration
+
+---
+
+**MarkHughes18 – Code Reviews / Repository Structure**
+
+- Created the initial `README.md` with the full handbook structure and purpose (PR #1)
+- Added Contents, How to Use, and Development Process sections to README
+- Wrote the code reviews research notes and full write-up (`02-code-reviews.md`)
+- Updated code review research to match the handbook style
+- Added PR examples and supporting image to the code reviews section
+- Reorganised files and folders to match the README structure
+- Made peer review improvements to the task estimation section
+
+---
+
+**Dean-c19 – Bug Tracking / Retrospective / Diagrams**
+
+- Created the bug tracking research file covering 5 sources with common themes
+- Developed the full bug tracking write-up (`bug-tracking-writeup.md`) including best practices, checklist, further reading, and why it matters
+- Renamed and restructured bug tracking files to follow the repo naming convention
+- Merged and managed the bug tracking feature branch (PRs #5, #7)
+- Added diagrams for each handbook topic to the `images/` folder
+- Wrote and updated `RETROSPECTIVE.md` covering what went well, what did not go well, and what the team would do differently
